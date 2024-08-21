@@ -5,7 +5,7 @@ def shorten_url(long_url, service="tinyurl"):
     try:
         shortener = pyshorteners.Shortener()
         
-        # Choose the shortening service
+        
         if service == "tinyurl":
             short_url = shortener.tinyurl.short(long_url)
         elif service == "bitly":
